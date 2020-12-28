@@ -14,6 +14,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
 body {
   color: var(--mainBlack);
   background: var(--mainWhite);
@@ -121,10 +127,14 @@ body {
 }
 .section-title h2 {
   text-align: center;
+  cursor: default;
   font-size: 2.5rem;
   margin-bottom: 5rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+}
+.section-title h2 a {
+  cursor: default;
 }
 .products__content {
   width: 90vw;
